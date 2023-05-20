@@ -100,13 +100,17 @@ import { FoodItemsComponent } from './features/food-items/food-items.component';
 import { MyResolver } from './service/myresolver.service';
 import { FoodItemService } from './service/fooditem.service';
 import { OrderSummaryComponent } from './features/order-summary/order-summary.component';
+import { UserDetailsComponent } from './features/user-details/user-details.component';
+import { HeaderComponent } from './features/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     FoodItemsComponent,
-    OrderSummaryComponent
+    OrderSummaryComponent,
+    UserDetailsComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
