@@ -1,13 +1,13 @@
 pipeline {
   agent any
 
-
+tools {
+    nodejs "Nodejs"
+}
   stages {
 
  stage('Install Dependencies') {
       steps {
-        // Install Node.js and npm
-        tool 'NodeJS'
 
         // Install project dependencies
         sh 'npm ci'
