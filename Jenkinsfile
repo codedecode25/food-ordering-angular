@@ -4,6 +4,12 @@ pipeline {
 tools {
     nodejs "Nodejs"
 }
+
+ environment {
+    DOCKER_REGISTRY = "docker.io"
+    DOCKERHUB_CREDENTIALS = credentials('DOCKER_HUB_CREDENTIAL')
+  }
+  
   stages {
 
  stage('Install Dependencies') {
